@@ -1,0 +1,36 @@
+name: Update automático
+
+on:
+  schedule:
+    - cron: '*/0 8 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v2
+
+    - name: Use Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: 16.10
+    - run: npm install
+    - run: npm run build --if-present
+      env:
+        CI: true
+
+    - name: Roda o arquivo
+      run: |-
+        node index.js
+        cat README.md
+
+    - name: Commit e push
+      run: |-
+        git diff
+        git config --global user.email "bot-readme@example.com"
+        git config --global user.name "README-bot"
+        git add -A
+        git commit -m "Arquivo atualizado!" || exit 0
+        git push
