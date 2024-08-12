@@ -6,7 +6,7 @@ fs.readFile('README_BASE.md', 'utf-8', (err, data) => {
     }
 
     const substituicoes = {
-        greeting: new Date().getHour() >= 0 && new Date().getHour() < 12 ? "Good Morning!" : new Date().getHour() < 18 ? "Good Afternoon!" : "Good Evening!"
+        greeting: new Date().getHours() >= 0 && new Date().getHours() < 12 ? "Good Morning!" : new Date().getHours() < 18 ? "Good Afternoon!" : "Good Evening!"
     }
 
     const modificado = data
