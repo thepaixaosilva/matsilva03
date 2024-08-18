@@ -5,9 +5,17 @@ fs.readFile('README_BASE.md', 'utf-8', (err, data) => {
         throw err;
     }
 
+    const currTimeBrazil = new Date().toLocaleString("en-US", {
+        timeZone: "America/Sao_Paulo"
+    })
+
+    const currTimePST = new Date().toLocaleString("en-US", {
+        timeZone: "America/Los_Angeles"
+    })
+
     const substituicoes = {
-        greeting_brazil: new Date().getHours() - 3 >= 0 && new Date().getHours() - 3 < 12 ? "Good Morning!" : new Date().getHours() - 3 < 18 ? "Good Afternoon!" : "Good Evening!",
-        greeting_usa_pacific: new Date().getHours() - 7 >= 0 && new Date().getHours() - 7 < 12 ? "Good Morning!" : new Date().getHours() - 7 < 18 ? "Good Afternoon!" : "Good Evening!",
+        greeting_brazil: new Date(currTimeBrazil).getHours()  >= 0 && new Date(currTimeBrazil).getHours() < 12 ? "Bom Dia!" : new Date(currTimeBrazil).getHours() < 18 ? "Boa Tarde!" : "Boa Noite!",
+        greeting_usa_pacific: new Date(currTimePST).getHours() >= 0 && new Date(currTimePST).getHours() < 12 ? "Good Morning!" : new Date(currTimePST).getHours() < 18 ? "Good Afternoon!" : "Good Evening!",
         greeting_world: new Date().getHours() >= 0 && new Date().getHours() < 12 ? "Good Morning!" : new Date().getHours() < 18 ? "Good Afternoon!" : "Good Evening!"
     }
 
