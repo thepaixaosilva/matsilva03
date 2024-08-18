@@ -22,7 +22,8 @@
         </tbody>
     </table>
     <div>
-        <img src="https://raw.githubusercontent.com/MicaelliMedeiros/micaellimedeiros/master/image/computer-illustration.png" height="285px"/>
+        <img src="https://github.com/matsilva03/matsilva03/blob/main/assets/computer-illustration.png" height="100%"/>
         </div>
     </div>
 </div>
+<img src="https://github.com/matsilva03/matsilva03/blob/main/assets/line-neon.gif" width="100%"/>
