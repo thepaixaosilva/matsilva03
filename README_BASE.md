@@ -26,4 +26,13 @@
         </div>
     </div>
 </div>
-<img src="https://github.com/matsilva03/matsilva03/blob/main/assets/line-neon.gif" width="100%"/>
+
+<h3>Stats: <img src="https://github.com/matsilva03/matsilva03/blob/main/assets/line-neon.gif" width="100%"/></h3>
+
+<h1 align="center">
+    <img src="https://github-readme-stats.vercel.app/api?username=matsilva03&theme=transparent&show_icons=true" height="185px" />
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=matsilva03&layout=compact&theme=transparent" height="185px"/>
+</h1>
+<div align="center">
+    <img src="https://github-profile-trophy.vercel.app/?username=matsilva03&theme=dracula&no-bg=true&no-frame=true&title=-Reviews" />
+</div>
