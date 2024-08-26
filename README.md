@@ -9,7 +9,7 @@
         <tbody>
             <tr>
                 <td align="center">🇧🇷 BRT</td>
-                <td><h2>Boa Noite!</h2></td>
+                <td><h2>Bom Dia!</h2></td>
             </tr>
             <tr>
                 <td align="center">🇺🇸 PST</td>
