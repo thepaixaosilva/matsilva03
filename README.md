@@ -13,7 +13,7 @@
             </tr>
             <tr>
                 <td align="center">🇺🇸 PST</td>
-                <td><h3>Good Afternoon!</h3></td>
+                <td><h3>Good Evening!</h3></td>
             </tr>
             <tr>
                 <td align="center">🕓 UTC</td>
